@@ -1,0 +1,63 @@
+/**
+	Very basic styles to show useable game post.  
+**/
+html,body {
+	background-color: #333;
+	color: #fff;
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+}
+#canvas {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+#canvasWrapper{
+	width: 568px;
+	height: 320px;
+	overflow: hidden;
+	position: relative;
+	margin:auto;
+	margin-top: 50px;
+}
+#facebook-share{
+	position:absolute;
+	bottom:1px;
+	right:1px;
+	cursor:pointer;
+	display:none;
+}
+#facebook-message{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	background-color:rgba(0,0,0,0.85);
+	text-align:center; display:none;
+}
+#facebook-message span{
+	margin-top:10px;
+	font-size:14px;
+}
+#facebook-message img{
+	margin-top:5px;
+	float:right;
+	margin-right:82px;
+}
+#close-message{
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	cursor: pointer;
+}
+#post-message{
+	width:400px;
+	height:200px;
+	margin-top:10px;
+}
