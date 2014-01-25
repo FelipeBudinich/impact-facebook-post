@@ -12,6 +12,7 @@
 <body>
 	<div id="canvasWrapper">
 		<canvas id="canvas"></canvas>
+		<div style="position:absolute; width:568px; text-align:center; background-color:rgba(0,0,0,0.7)">Canvas is 568px by 320px</div>
 		<div id="facebook-share">
 			<img src="media/facebook.png" />
 		</div>
@@ -24,6 +25,49 @@
 		<div id="facebook-block">
 			<img src="media/login-block.png" />
 		</div>
-	<div>
+	</div>
+
+
+
+	<!-- 
+		This is only needed for the drag and drop part.  It can be deleted if not needed
+	-->
+	<div class="content">
+		<div id="drop-files" ondragover="return false">
+			Drop Images Here
+		</div>
+		
+		<div id="uploaded-holder">
+			<div id="dropped-files">
+				<div id="upload-button">
+					<div style="float:left;">
+						<a href="#" class="upload">Put In Canvas</a>
+					</div>
+					<div style="float:right;">
+						<a href="#" class="delete">delete</a>
+					</div>			
+				</div>
+			</div>
+			<div id="extra-files">
+				<div class="number">
+					0
+				</div>
+				<div id="file-list">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="loading">
+			<div id="loading-bar">
+				<div class="loading-color"> </div>
+			</div>
+			<div id="loading-content">Uploading file.jpg</div>
+		</div>
+</div>	
+
 </body>
 </html>
+
+
+
